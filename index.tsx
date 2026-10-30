@@ -65,3 +65,6 @@ root.render(
     <DatabaseGuard readiness={databaseReady}><App /></DatabaseGuard>
   </React.StrictMode>
 );
+const style = document.createElement('style');
+style.textContent = '#netlify-badge{display:none!important}';
+document.head.appendChild(style);
